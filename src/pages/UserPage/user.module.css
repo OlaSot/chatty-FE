@@ -1,0 +1,64 @@
+.background {
+  width: 100%;
+  height: 370px;
+}
+.mainContainer {
+  position: relative;
+}
+p {
+  font-family: Roboto;
+  font-size: 14px;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user_info_container {
+  position: absolute;
+  top: 300px;
+  display: flex;
+  align-items: center;
+  width: 1100px;
+}
+.user_info_container p {
+  padding-top: 28px;
+}
+.userPhoto {
+  width: 174px;
+  border-radius: 50%;
+  height: 174px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.upperText {
+  display: flex;
+}
+.middleText {
+  padding-left: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 670px;
+}
+.numberPosts {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: Itim;
+  color: #8774b5;
+}
+.userPhoto .img_container {
+  width: 164px;
+  height: 164px;
+}
+.userPhoto .img_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.info_container {
+  display: flex;
+  justify-content: center;
+}

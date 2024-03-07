@@ -1,0 +1,97 @@
+// @import url('https://fonts.googleapis.com/css2?family=Itim:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+@import 'variables';
+@import 'mixin';
+@import '../styles/pages/registration.scss';
+@import '../styles/pages/errorstyle.scss';
+@import '../styles/components/header.scss';
+@import '../styles/pages/about.scss';
+@import '../styles/pages/contact.scss';
+@import '../styles/pages/homeblog.scss';
+@import '../styles/pages/userprofile.scss';
+@import '../styles/pages/draft.scss';
+@import '../styles/pages/adminuserspanel.scss';
+@import '../styles/components/sidebar.scss';
+@import '../styles/components/suggestions.scss';
+@import '../styles/components/posts.scss';
+@import '../styles/components/post.scss';
+@import '../styles/components/postheader.scss';
+@import '../styles/components/postcreationform.scss';
+@import '../styles/components/editpost.scss';
+@import '../styles/components/postedit.scss';
+@import '../styles/components/modal.scss';
+@import '../styles/UI/checkbox.scss';
+@import '../styles/UI/button.scss';
+@import '../styles/components/userProfileForm.scss';
+@import './fonts';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.logo {
+  position: absolute;
+  bottom: -350px; // Начальное положение вне видимой области
+  left: -350px;
+  opacity: 0; // Изначально логотип невидим
+  transition:
+    opacity 0.3s ease-in-out,
+    bottom 0.3s ease-in-out,
+    left 0.3s ease-in-out;
+
+  &.logo-visible {
+    bottom: -150px; // Конечное положение
+    left: -100px;
+    opacity: 1; // Делаем логотип видимым
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.home {
+  font-size: 16px;
+  font-weight: 600;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    to bottom right,
+    #f3ddeb,
+    #daadd0,
+    #bf97c6,
+    #8774b5
+  );
+}
+// ========== link a end =========
+.container {
+  max-width: 1172px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: flex;
+  gap: 12px;
+  padding: 24px 0;
+
+  &__item {
+    color: #666;
+
+    &--active {
+      color: #000000;
+    }
+  }
+}
+
+.loading-text {
+  font-size: 32px;
+  color: $font-color-text;
+}

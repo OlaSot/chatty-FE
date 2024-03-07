@@ -1,0 +1,14 @@
+.posts {
+  &__section {
+    margin: 120px 270px 0 270px;
+    border-radius: 14px;
+
+    @include onLaptop {
+      margin: 120px 10px 0px 10px;
+    }
+
+    @include onMobile {
+      margin: 120px 10px 0px 10px;
+    }
+  }
+}

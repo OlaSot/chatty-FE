@@ -1,0 +1,82 @@
+@import '../variables';
+
+.user-profile {
+  background-color: rgba(245, 244, 246, 1);
+  height: 100vh;
+  position: relative;
+  .suggestions,
+  .sidebar {
+    @include onLaptop {
+      display: none;
+    }
+  }
+  &__section {
+    margin: 120px 270px 0 270px;
+    border-radius: 14px;
+
+    @include onLaptop {
+      margin: 120px 10px 0 10px; 
+    }
+
+    @include onMobile {
+      margin: 120px 10px 0 10px; 
+    }
+  
+  }
+
+    .user-profile__info {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+      margin-bottom: 50px;
+    }
+
+    .user-profile__left {
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    .user-profile__right {
+      p {
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px;
+        margin: 20px 0px;
+        font-size: 1rem;
+        background-color: $secondary-color;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        width: 245px;
+        border-radius: 15px;
+        transition: background-color 0.5s;
+
+        &:active {
+          background-color: darken($secondary-color, 55%);
+        }
+
+        &:disabled {
+          background-color: $tertiary-color;
+          color: #6c6c6c;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+  }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 1000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

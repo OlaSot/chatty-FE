@@ -1,0 +1,104 @@
+.post-header {
+  color: rgba(135, 116, 181, 1);
+  position: fixed;
+  font-family: Itim;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+
+  p {
+    font-family: Itim, sans-serif;
+    font-size: 22px;
+  }
+
+  &__section {
+    margin: 39px 270px 0 0px;
+    border-radius: 14px;
+    padding: 20px 0px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    @include onLaptop {
+      margin: 39px 10px 0px 10px;
+    }
+
+    @include onMobile {
+      margin: 48px 10px 0px 10px;
+      gap: 10px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .post-header__checkbox {
+      display: flex;
+      @include onLaptop {
+        font-size: 16px;
+      }
+
+      @include onMobile {
+        font-size: 12px;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 610px;
+
+    .post-header__feed {
+      @include onLaptop {
+        opacity: 0;
+      }
+
+      @include onMobile {
+        opacity: 0;
+      }
+    }
+
+    .post-header__plus-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 22px;
+      margin-right: 20px;
+
+      @include onLaptop {
+        font-size: 16px;
+      }
+
+      @include onMobile {
+        font-size: 12px;
+        // display: none;
+      }
+
+      span {
+        margin-left: 15px;
+        padding-bottom: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 24px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgb(210, 195, 244);
+        cursor: pointer;
+
+        @include onMobile {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

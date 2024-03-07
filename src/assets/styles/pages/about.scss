@@ -1,0 +1,30 @@
+@import '../variables';
+
+.about {
+  background-color: rgba(245, 244, 246, 1);
+  height: 100vh;
+  font-family: Roboto;
+
+  h1 {
+    font-size: 1.5rem;
+    color: $main-color;
+  }
+
+  &-box {
+    margin-top: 36px;
+    padding-top: 100px;
+    color: $font-color-text;
+
+    @include onLaptop {
+      margin: 36px 20px 0 20px;
+    }
+
+    @include onMobile {
+      margin: 30px 16px 0 16px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+}

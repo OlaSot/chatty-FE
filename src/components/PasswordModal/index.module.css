@@ -1,0 +1,87 @@
+.password_modal {
+    max-width: 466px;
+    background-color: white;
+    padding: 25px 55px 25px 55px;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 1000;
+    font-family: Inter;
+   
+}
+
+.passParagraph {
+    font-size: 30px;
+    font-weight: 500;
+}
+.inputWrapper {
+    position: relative; 
+    width: 352px; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #EEEDEE; 
+    border-radius: 10px; 
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #daa9e4;
+    background-color: #ffffff;
+  }
+
+
+.password_modal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pass_input {
+    width: 352px;
+    background-color: #EEEDEE;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.pass_btn {
+    width: 352px;
+
+}
+
+
+.toggleVisibilityIcon {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 30px;
+}
+
+.error{
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .password_modal {
+        padding: 20px;
+        width: 350px;
+    }
+
+    .inputWrapper, .pass_input, .pass_btn {
+        width: 90%; 
+    }
+
+    .toggleVisibilityIcon {
+        right: 10px; 
+    }
+}

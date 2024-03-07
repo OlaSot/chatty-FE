@@ -1,0 +1,118 @@
+.post-form__section {
+  position: relative;
+  font-family: Roboto;
+
+  .success-message {
+    position: absolute;
+    top: -20px;
+    left: 25%;
+    font-size: 12px;
+    color: $font-color-text;
+  }
+
+  .post-form {
+    margin: 120px 270px -80px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    background-color: $background-posts;
+    border-radius: 20px;
+
+    @include onLaptop {
+      margin: 120px 20px -70px;
+      font-size: 14px;
+    }
+
+    @include onMobile {
+      margin: 120px 20px -90px;
+      font-size: 12px;
+    }
+  }
+
+  .form-group input,
+  .form-group textarea {
+    margin-bottom: 15px;
+
+    @include onLaptop {
+      font-size: 14px;
+    }
+
+    @include onMobile {
+      font-size: 12px;
+    }
+  }
+  .form-group textarea {
+    height: 250px;
+    font-family: Roboto;
+    font-weight: 300;
+  }
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .form-control.error-border {
+    border-color: red !important;
+  }
+
+  .form-control::placeholder {
+    color: #ccc;
+  }
+  .form-control:focus {
+    outline: none;
+    border-color: #a1a5a9;
+  }
+  .btn-primary {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  .form__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 52px;
+
+    @include onLaptop {
+      font-size: 14px;
+    }
+
+    @include onMobile {
+      font-size: 12px;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .react-datepicker__input-container input {
+      @include onLaptop {
+        font-size: 14px;
+      }
+
+      @include onMobile {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .error {
+    margin: 0 20px 20px 0px;
+    color: #ef5372;
+  }
+}

@@ -1,0 +1,36 @@
+.draft {
+  position: relative;
+
+  .suggestions,
+  .sidebar {
+    @include onLaptop {
+      display: none;
+    }
+  }
+
+  h1 {
+    color: $font-color-text;
+  }
+
+  p {
+    font-family: Roboto;
+  }
+
+  &__section {
+    margin: 120px 270px -70px;
+
+    border-radius: 14px;
+
+    @include onLaptop {
+      margin: 120px 20px -70px;
+    }
+
+    @include onMobile {
+      margin: 120px 20px -90px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+}

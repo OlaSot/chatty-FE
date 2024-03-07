@@ -1,0 +1,192 @@
+.nav-link-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.registration {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Roboto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    #f3ddeb,
+    #daadd0,
+    #bf97c6,
+    #8774b5
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    #f3ddeb,
+    #daadd0,
+    #bf97c6,
+    #8774b5
+  );
+}
+.registration .container {
+  width: 430px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 20px;
+}
+.registration .container .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.registration .container .form + p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  color: #c2a2d8;
+}
+.registration .container .form h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #36333a;
+}
+.registration .container .form .link {
+  margin-bottom: 15px;
+}
+.registration .container .form .text-error {
+  font-size: 10px;
+  font-weight: 300;
+  color: #c2a2d8;
+}
+.registration .container .form input {
+  margin-bottom: 15px;
+  width: 345px;
+  height: 55px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #eeedee;
+  border: none;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;
+}
+.registration .container .form input:focus {
+  outline: none;
+  border: 1px solid #c2a2d8;
+  background-color: #ffffff;
+}
+.registration .container .form input::-moz-placeholder {
+  font-size: 14px;
+}
+.registration .container .form input::placeholder {
+  font-size: 14px;
+}
+.registration .container .form .input-password__wrapper {
+  position: relative;
+}
+.registration
+  .container
+  .form
+  .input-password__wrapper
+  .input-password
+  + .password-toggle-icon {
+  position: absolute;
+  right: 0px;
+  top: 27px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.registration .container .form .input-password__wrapper .password-eye {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.registration .container .form .registration-btn {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #c2a2d8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 345px;
+  height: 55px;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+.registration .container .form .registration-btn:active {
+  background-color: #341d45;
+}
+.registration .container .form .registration-btn:disabled {
+  background-color: #efe1f9;
+  color: #6c6c6c;
+  cursor: not-allowed;
+}
+.registration .container .form select {
+  width: 150px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #eeedee;
+  border: none;
+  padding: 5px;
+  color: #79767d;
+}
+.registration .container .form select:focus {
+  outline: none;
+}
+.registration .container .form .user-info {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.registration .container .form .user-info p {
+  font-family: Roboto;
+}
+.registration .container .form .user-info p a {
+  text-decoration: none;
+  color: #8774b5;
+  padding: 10px;
+}
+.registration .container .form .user-info p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .registration {
+    font-size: 14px;
+  }
+  .registration .container {
+    width: 90%;
+    padding: 15px;
+  }
+  .registration .form input,
+  .registration .registration-btn {
+    width: 100px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+  .registration .input-password__wrapper .password-toggle-icon {
+    top: 20px;
+  }
+  .registration h1 {
+    font-size: 1.2rem;
+  }
+  .registration .text-error,
+  .registration + p {
+    font-size: 0.8rem;
+  }
+  .registration .user-info p a {
+    padding: 8px;
+  }
+} /*# sourceMappingURL=registration.css.map */

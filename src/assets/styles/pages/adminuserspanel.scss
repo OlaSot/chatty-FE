@@ -1,0 +1,121 @@
+.admin-panel__users {
+  background-color: rgba(245, 244, 246, 1);
+  font-family: Roboto;
+  min-height: 100vh;
+  &-section {
+    margin-top: 36px;
+    padding-top: 40px;
+    color: $font-color-text;
+    font-family: Roboto;
+
+    @include onLaptop {
+      margin: 36px 20px 0px;
+    }
+
+    h1 {
+      font-size: calcFluidFontSize(14, 18, 300, 1170);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: calcFluidFontSize(12, 14, 300, 1170);
+      margin-bottom: 20px;
+    }
+    .search-email {
+      margin-bottom: 20px;
+
+      input {
+        width: 300px;
+        height: 35px;
+        padding: 8px 20px;
+        margin-right: 10px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        background-color: $input-color;
+        border: none;
+        transition:
+          border-color 0.3s,
+          background-color 0.3s;
+      }
+
+      input:focus {
+        outline: none;
+        border: 1px solid $secondary-color;
+        background-color: #ffffff;
+      }
+
+      input::placeholder {
+        font-size: 12px;
+      }
+
+      .email-btn {
+        // display: block;
+        padding: 5px 15px;
+        width: auto;
+        font-size: 12px;
+        height: 32px;
+      }
+    }
+
+    table {
+      width: 100%;
+      background-color: #dbdadc;
+      background-color: #e6e6e6;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-family: Roboto;
+      font-size: calcFluidFontSize(10, 12, 300, 1170);
+
+      .admin-panel__btn-box {
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .id-hide {
+      @include onMobile {
+        display: none;
+      }
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      font-family: Roboto;
+    }
+
+    span {
+      padding: 0 20px;
+      @include onMobile {
+        padding: 0 10px;
+      }
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .action-btn {
+      cursor: pointer;
+      color: #007bff;
+      margin-right: 10px;
+    }
+
+    .action-btn:hover {
+      text-decoration: underline;
+    }
+
+    .admin-btn {
+      padding: 8px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      width: auto;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+}

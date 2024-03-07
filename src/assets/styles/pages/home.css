@@ -1,0 +1,16 @@
+.home__section {
+  display: flex;
+  flex-direction: column;
+}
+.home__section h1 {
+  margin-bottom: 10px;
+}
+.home__section a {
+  font-family: Roboto;
+  font-weight: 400;
+  color: rgb(101, 65, 185);
+  text-decoration: none;
+}
+.home__section a:hover {
+  text-decoration: underline;
+} /*# sourceMappingURL=home.css.map */

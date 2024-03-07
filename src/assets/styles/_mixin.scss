@@ -1,0 +1,47 @@
+@mixin flex-container(
+  $justify-content: flex-start,
+  $align-items: flex-start,
+  $gap: false
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  @if $gap {
+    gap: $gap;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onLaptop {
+  @media (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin linkUnderlineHover($color: $font-color-green) {
+  position: relative;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: $color;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &::before {
+    transition: width 0.35s;
+  }
+}

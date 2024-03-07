@@ -1,0 +1,38 @@
+@import '../variables';
+
+.home-blog {
+  height: 100vh;
+  position: relative;
+
+  .left-side {
+    width: 100%;
+  }
+  .suggestions,
+  .sidebar {
+    @include onLaptop {
+      display: none;
+    }
+  }
+
+  .refresh-button {
+    position: absolute;
+    top: -50px;
+    left: 40%;
+
+    z-index: 3;
+    padding: 10px;
+  }
+
+  &__box {
+    margin-top: 36px;
+    color: $font-color-text;
+
+    @include onLaptop {
+      margin: 36px 20px 0 20px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+}

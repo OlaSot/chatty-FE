@@ -1,0 +1,28 @@
+$font-color-text: rgba(135, 116, 181, 1);
+$font-color-black: rgba(0, 0, 0, 1);
+// $font-color-sidebar: rgba(245, 244, 246, 1);
+$font-color-sidebar: rgb(250, 228, 250);
+
+$font-color-white: #ffffff;
+$input-color: #eeedee;
+$main-color: #8774b5;
+$secondary-color: #c2a2d8;
+$tertiary-color: #efe1f9;
+
+$header-color: #fdf9fc;
+$background-posts: #f5f4f6;
+
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+//fonts-colors
+$main-font-color: #36333a;
+$secondary-font-color: #79767d;
+
+@function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {
+  $k: ($f-max - $f-min)/ ($v-max - $v-min);
+  $b: $f-min - $k * $v-min;
+
+  $b: $b * 1px;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}

@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  chatty-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_BASE_URL: http://chatty.telran-edu.de:8989
+    ports:
+      - "8089:80"
